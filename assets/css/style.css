@@ -1,0 +1,27 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-brand, .lg_footer {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 40px;
+}
+header {
+    /*height: 300%;*/
+    background-image: url(../img/hero_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 46.063rem;
+   /*  background-size: 100% 200%; */
+    padding: 3.75rem 0 50rem 0;
+    margin-top: 3.75rem;
+}
+
+.navbar, .ultimos-trabajos, footer {
+    background-color: #116FA2;
+}
