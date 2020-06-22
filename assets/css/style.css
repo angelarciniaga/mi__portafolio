@@ -13,7 +13,7 @@ body {
 }
 header {
     /*height: 300%;*/
-    background-image: url(../img/hero_bg.png);
+    background-image: url(../img/bg_hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 46.063rem;
@@ -23,5 +23,13 @@ header {
 }
 
 .navbar, .ultimos-trabajos, footer {
-    background-color: #116FA2;
+    background-color: #660066;
+}
+
+#nombre {
+    border-top-color: black;
+    border-top-style: solid;
+    border-width: 2px;
+    height: 50px;
+    
 }
