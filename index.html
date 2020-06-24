@@ -5,16 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Magdalena</title>
-    <!-- Google fonts (Fira Sans(Exra Condensed), Nunito (Regular 400, Bold 700)) -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@800&family=Nunito:wght@400;700&display=swap"
-        rel="stylesheet">
+    <!-- Google fonts (Oswald(Exra-light-200 Bold-700), Open-Sans (Light-300 Regular-400, Semi-Bold-700)) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;700&display=swap" rel="stylesheet">
     <!-- Bootstrap v4.5.0 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- FontAwesome v5.13.1 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <!-- Mi Estilo -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -24,7 +20,7 @@
     <!-- Sección Barra de navegacion -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-0">
         <div class="container">
-            <a class="navbar-brand" href="#">M</a>
+            <a class="navbar-brand font-weight-bold" href="#">M</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,16 +45,18 @@
     </nav>
 
     <!-- Sección Cabezera -->
-    <header class="container-fluid py-5">
-        <h1 class="display-4">YO SOY</h1>
-        <h2 id="nombre" class="display-4 font-weight-bold">MAGDALENA</h2>
+    <header class="container-fluid py-5 text-white">
+        <h1 class="cabezera display-3 text-center">YO SOY</h1>
+        <hr class="titulo text-center">
+        <h2 id="nombre" class="display-3 font-weight-bold text-center">MAGDALENA</h2>
     </header>
 
     <!-- Sección descripción -->
-    <section id="sobremi" class="container d-none d-md-block">
+    <section id="sobremi" class="container d-none d-md-block pb-5">
         <h2 class="text-center font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec
             in neque consectetur, ultrices justo eu, hendrerit lectus.</h2>
-        <div class="row">
+            <hr class="subtitulo text-center">
+        <div class="row mt-5">
             <div class="col">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque
                 consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod consequat sed
@@ -81,30 +79,32 @@
     </section>
 
     <!-- Sección mi experiencia -->
-    <section id="experiencia" class="container text-center">
-        <h1 class="display-5 font-weight-bold">MI EXPERIENCIA</h1>
+    <section id="experiencia" class="container text-center mb-5">
+        <h1 class="display-4 font-weight-bold">MI EXPERIENCIA</h1>
+        <hr class="subtitulo">
         <div class="row">
             <div class="col-md text-center">
-                <i class="fab fa-empire fa-7x"></i>
-                <h2 class="font-weight-bold">Stormtrooper</h2>
-                <h2>1980 - 2014</h2>
+                <i class="fab fa-empire fa-7x my-4"></i>
+                <h2 class="display-5 font-weight-bold my-0">Stormtrooper</h2>
+                <h2 class="font-weight-light">1980 - 2014</h2>
             </div>
             <div class="col-md">
-                <i class="fab fa-medium fa-7x"></i>
-                <h2 class="font-weight-bold">Desarrolladora Rails</h2>
-                <h2>2014 - 2018</h2>
+                <i class="fab fa-medium fa-7x my-4"></i>
+                <h2 class="display-5 font-weight-bold my-0">Desarrolladora Rails</h2>
+                <h2 class="font-weight-light">2014 - 2018</h2>
             </div>
         </div>
     </section>
 
     <!-- Sección mis últimos trabajos -->
-    <section id="trabajos" class="ultimos-trabajos py-5">
+    <section id="trabajos">
         <div class="container text-center">
-            <h1 class="display-5 pb-5 font-weight-bold text-white">MIS ÚLTIMOS TRABAJOS</h1>
+            <h1 class="display-4 font-weight-bold text-white">MIS ÚLTIMOS TRABAJOS</h1>
+            <hr class="subtitulo bg-light">
             <div class="row">
                 <div class="card-deck">
                     <div class="card m-5">
-                        <img src="assets/img/meet_coffee.png" class="card-img-top" alt="...">
+                        <a href="https://angelarciniaga.github.io/meetCoffee/" target="_blank" rel="noopener noreferrer"><img src="assets/img/meet_coffee.png" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <h5 class="card-title">Meet&Coffe</h5>
                             <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien.</p>
@@ -153,8 +153,9 @@
     </section>
 
     <!-- Sección Contacto -->
-    <section id="contacto" class="container my-5">
-        <h1 class="display-5 text-center font-weight-bold">CONTACTO</h1>
+    <section id="contacto" class="container mb-5">
+        <h1 class="display-4 text-center font-weight-bold">CONTACTO</h1>
+        <hr class="subtitulo">
         <div class="typeform-widget" data-url="https://form.typeform.com/to/M5l4dtAz" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=M5l4dtAz&utm_source=typeform.com-01EAZZ88PMBH348R6303BF5WRF-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
 
     </section>
@@ -163,21 +164,23 @@
     <footer class="container-fluid py-5">
         <div class="row container text-center text-white align-middle">
             <div class="col-md align-middle">
-                <h1 class="lg_footer m-auto">MAGDALENA</h1>
+                <h1 class="lg_footer m-auto font-weight-bold">MAGDALENA</h1>
             </div>
             <div class="col-md d-flex justify-content-center">
-                <div class="row">
+                <div class="row iconos">
                     <div class="col">
-                        <i class="fab fa-github-square fa-3x"></i>
+                        <a href="https://github.com/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fab fa-github-square fa-3x"></i></a>                  
                     </div>
                     <div class="col">
-                        <i class="fab fa-linkedin fa-3x"></i>
+                        <a href="http://www.linkedin.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fab fa-linkedin fa-3x"></i></a>   
                     </div>
                     <div class="col">
-                        <i class="fab fa-twitter-square fa-3x"></i>
+                        <a href="http://www.twitter.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fab fa-twitter-square fa-3x"></i></a>
+                        
                     </div>
                     <div class="col">
-                        <i class="fab fa-facebook-square fa-3x"></i>
+                        <a href="http://www.facebook.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fab fa-facebook-square fa-3x"></i></a>
+                        
                     </div>
                 </div>
             </div>
